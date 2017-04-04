@@ -7,10 +7,15 @@ After pull, first update (your own choice of) Digestor and Encyptor configuratio
 
 For example,
 
-#Properties of DIgester
+#Properties of DIgester:
+
 DIGESTER_ALGORITHM=MD5
+
 ITERATIONS=1000
 
-#Properties of ENcryptor
+
+#Properties of ENcryptor:
+
 ENCRYPTOR_ALGORITHM=PBEWITHMD5ANDTRIPLEDES
+
 SALT_PWD=SALT
