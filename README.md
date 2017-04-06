@@ -1,20 +1,20 @@
 # MasterKey
 An droid application to secure all passwords.
 
-Initial Setup:
+###Initial Setup
 
 After pull, first update (your own choice of) Digestor and Encyptor configurations in /assets/app.properties file.
 
-For example,
+*For example*,
 
-#Properties of DIgester:
+###Properties of Digester
 
 DIGESTER_ALGORITHM=MD5
 
 ITERATIONS=1000
 
 
-#Properties of ENcryptor:
+#Properties of Encryptor:
 
 ENCRYPTOR_ALGORITHM=PBEWITHMD5ANDTRIPLEDES
 
