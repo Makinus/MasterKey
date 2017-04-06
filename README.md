@@ -6,9 +6,9 @@ After pull, first update (your own choice of) Digestor and Encyptor configuratio
 *For example*,
 
 ### Properties of Digester
-DIGESTER_ALGORITHM=MD5
-ITERATIONS=1000
+- DIGESTER_ALGORITHM=MD5
+- ITERATIONS=1000
 
 ### Properties of Encryptor
-ENCRYPTOR_ALGORITHM=PBEWITHMD5ANDTRIPLEDES
-SALT_PWD=SALT
+- ENCRYPTOR_ALGORITHM=PBEWITHMD5ANDTRIPLEDES
+- SALT_PWD=SALT
