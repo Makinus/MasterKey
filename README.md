@@ -12,3 +12,6 @@ After pull, first update (your own choice of) Digestor and Encyptor configuratio
 ### Properties of Encryptor
 - ENCRYPTOR_ALGORITHM=PBEWITHMD5ANDTRIPLEDES
 - SALT_PWD=SALT
+
+### Download
+You can download the apk file from [makinus.com/freeapps](http://makinus.com/freeapps.html)
