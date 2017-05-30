@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@drawable/form_quare"
+    android:orientation="vertical" >
+
+    <RelativeLayout 
+	   android:layout_width="match_parent"
+	   android:layout_height="wrap_content"
+	   android:layout_margin="1dp" 
+	   android:padding="10dp">
+	   
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="@string/formCardDetails"
+        android:layout_centerInParent="true"
+        android:textColor="@color/btncolor"
+        android:textStyle="bold|italic"
+        android:padding="5dp"
+        android:gravity="center"
+        android:shadowColor="#dbdbdb"
+        android:shadowDx="-2"
+        android:shadowDy="-2"
+        android:shadowRadius="1"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    <TextView
+        android:id="@+id/lAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView1"
+        android:text="@string/strAccount"
+        android:padding="15dp"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/lUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/lAccount"
+        android:text="@string/strUsername"
+        android:padding="15dp"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/lPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lUsername"
+        android:layout_alignParentStart="true"
+        android:text="@string/strPassword"
+        android:padding="15dp"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    <TextView
+        android:id="@+id/lUrl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lPassword"
+        android:layout_alignParentStart="true"
+        android:text="@string/strUrl"
+        android:padding="15dp"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    <EditText
+        android:id="@+id/eTxtAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/lPassword"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/textView1"
+        android:ems="10"
+        android:padding="15dp"
+        android:inputType="text" >
+
+        <requestFocus />
+    </EditText>
+
+    
+   
+    
+    <EditText
+        android:id="@+id/eTxtUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/eTxtAccount"
+        android:layout_toEndOf="@+id/lUsername"
+        android:layout_alignParentEnd="true"
+        android:ems="10"
+        android:padding="15dp"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/eTxtPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/eTxtUsername"
+        android:layout_toEndOf="@+id/lPassword"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:padding="15dp" />
+
+    <EditText
+        android:id="@+id/eTxtUrl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/eTxtPassword"
+        android:layout_toEndOf="@+id/lUrl"
+        android:layout_alignParentEnd="true"
+        android:ems="10"
+        android:padding="15dp"
+        android:inputType="textUri" />
+    
+    <CheckBox
+	    android:id="@+id/cbHidePwd"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentStart="true"
+	    android:layout_below="@+id/lUrl"
+	    android:padding="10dp"
+        android:text="@string/strHidePwd" />
+
+	<CheckBox
+	    android:id="@+id/cbRemindMe"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentStart="true"
+	    android:layout_below="@+id/cbHidePwd"
+	    android:padding="10dp"
+        android:text="@string/strRemindMe" />
+
+	<TextView
+	    android:id="@+id/lblRemindMsg"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/cbRemindMe"
+	    android:text="@string/strRemindDaysMsg"
+	    android:textColor="@color/gray"
+	    android:textAppearance="?android:attr/textAppearanceSmall" />
+	
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+        <Button
+		    android:id="@+id/btnUpdate"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:background="@color/btncolor"
+		    android:text="@string/strUpdate"
+		    android:textStyle="bold"
+		    android:layout_alignParentBottom="true"
+		    android:layout_alignParentStart="true"
+		    android:layout_toStartOf="@+id/dummyView" />
+
+		<View
+        android:id="@+id/dummyView"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_centerHorizontal="true" />
+		
+	    <Button
+	        android:id="@+id/btnDelete"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:background="@color/btncolor"
+	        android:textStyle="bold"
+	        android:text="@string/strDelete"
+	        android:layout_alignParentBottom="true"
+	        android:layout_alignParentEnd="true"
+		    android:layout_toEndOf="@+id/dummyView" />
+    </RelativeLayout>
+
+</LinearLayout>

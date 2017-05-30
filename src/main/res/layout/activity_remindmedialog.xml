@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/form_quare"
+    android:padding="5dp" >
+ 
+ 	<Button
+        android:id="@+id/dialogButtonOK"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_centerInParent="true"
+        android:background="@color/btncolor"
+        android:layout_below="@+id/noOfDaysPicker"
+        android:textStyle="bold"
+        android:text="@string/strOK"
+        />
+
+ 	<NumberPicker
+ 	    android:id="@+id/noOfDaysPicker"
+ 	    android:layout_width="wrap_content"
+ 	    android:layout_height="wrap_content"
+ 	    android:layout_margin="5dp"
+ 	    android:layout_centerInParent="true"
+ 	    android:layout_below="@+id/lblRemindDays" />
+
+ 	<TextView
+ 	    android:id="@+id/lblRemindDays"
+ 	    android:layout_width="wrap_content"
+ 	    android:layout_height="wrap_content"
+ 	    android:layout_alignParentTop="true"
+ 	    android:layout_alignParentStart="true"
+ 	    android:text="@string/strRemindDays"
+ 	    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</RelativeLayout>

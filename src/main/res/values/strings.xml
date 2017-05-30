@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">>MasterKey</string>
+    <string name="strMasterPwd">Enter Master key : </string>
+    <string name="strSave">Save</string>
+    <string name="strOK">OK</string>
+    <string name="strAddNew">Add Card</string>
+    
+    <string name="strAccount">Account:</string>
+    <string name="strUsername">Username:</string>
+    <string name="strPassword">Password:</string>
+    <string name="strUrl">Url (optional):</string>
+    <string name="strHidePwd">Hide Password</string>
+    <string name="strRemindMe">Remind Me</string>
+    <string name="strRemindDays">Remind Me in Days:</string>
+    <string name="strRemindDaysMsg">(Reminder is not set.)</string>
+    <string name="strEdit">Edit</string>
+    <string name="strShare">Share</string>
+    <string name="strUpdate">Update</string>
+    <string name="strDelete">Delete</string>
+    <string name="strBack">Back</string>
+    
+	
+	<string name="strCurrentPwd">Current Master key:</string>
+    <string name="strNewPwd">New Master key:</string>
+	<string name="strConfirmPwd">Confirm Master key:</string>
+	<string name="strConfirm">Confirm</string>
+	
+	<string name="lblForgotKey">Forgot Master key?</string>
+	<string name="strResetCode">Reset code:</string>
+	<string name="strReset">Reset</string>
+	
+	<string name="strBackup">Backup</string>
+	<string name="strRestore">Restore</string>
+	<string name="strAbout">About</string>
+	<string name="strHelp">Help</string>
+    <string name="strSearch">Search</string>
+	<string name="strChangePwd">Change Master Key</string>
+	<string name="strResetPwd">Reset Master Key</string>
+	<string name="strGenerateCode">Generate Reset Code</string>
+	<string name="strGenerateCodeMsg">Reset code will be used to reset Master key in case you are having trouble to login with Master key.</string>
+	<string name="strGenerate">Generate code and Email</string>
+	
+	<string name="formNewCard">New Card Details</string>
+	<string name="formCardDetails">Card Details</string>
+	
+</resources>

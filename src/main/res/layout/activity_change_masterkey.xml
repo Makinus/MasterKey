@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/form_quare"
+    android:orientation="vertical" >
+    
+    
+	<RelativeLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content" 
+	    android:layout_margin="1dp" 
+		android:padding="10dp"
+	    android:layout_gravity="center_vertical">
+
+    <TextView
+        android:id="@+id/lOldPwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="45dp"
+        android:text="@string/strCurrentPwd"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/lNewPwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/lOldPwd"
+        android:layout_marginTop="55dp"
+        android:text="@string/strNewPwd"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/lConfirmPwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lNewPwd"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="60dp"
+        android:text="@string/strConfirmPwd"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    
+    <EditText
+        android:id="@+id/eTxtOldPwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/lOldPwd"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="15dp"
+        android:ems="10"
+        android:inputType="text" >
+
+        <requestFocus />
+    </EditText>
+
+    
+    <EditText
+        android:id="@+id/eTxtNewPwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/eTxtOldPwd"
+        android:layout_toRightOf="@+id/lNewPwd"
+         android:layout_alignParentRight="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="35dp"
+        android:ems="10"
+        android:inputType="text" />
+
+    
+    
+    <EditText
+        android:id="@+id/eTxtConfirmPwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/eTxtNewPwd"
+        android:layout_toRightOf="@+id/lConfirmPwd"
+         android:layout_alignParentRight="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="10dp"
+        android:ems="10"
+        android:inputType="text" />
+
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="Change Master Key"
+        android:layout_centerInParent="true"
+        android:textColor="@color/btncolor"
+        android:textStyle="bold|italic"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:shadowColor="#dbdbdb"
+        android:shadowDx="-2"
+        android:shadowDy="-2"
+        android:shadowRadius="1"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</RelativeLayout>
+
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <Button
+        android:id="@+id/btnConfirm"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/btncolor"
+        android:textStyle="bold"
+        android:text="@string/strConfirm" />
+</RelativeLayout>
+
+</LinearLayout>

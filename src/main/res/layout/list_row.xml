@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_selector"
+    android:padding="5dp"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/txtCardId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@id/lAccount"
+        android:gravity="end"
+        android:text="0"
+        android:layout_marginEnd="5dip"
+        android:textSize="18dp"
+        android:textColor="#10bcc9"
+        android:visibility="invisible"
+        android:textStyle="bold"/>
+ 
+    <ImageView 
+        android:id="@+id/imgRemindMe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_reminder_active"
+        android:layout_alignParentEnd="true"/>
+    
+    <ImageView
+        android:id="@+id/imgShowHide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_visibility"
+        android:layout_toStartOf="@+id/imgRemindMe"
+        android:visibility="visible" />
+    
+     <!-- Rightend Arrow -->
+
+    <ImageView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_chevron_right"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:visibility="visible"
+        android:layout_toStartOf="@+id/txtCardId" />
+
+    <TextView
+        android:id="@+id/lblPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtPassword"
+        android:layout_alignBottom="@+id/txtPassword"
+        android:layout_alignStart="@+id/lblUsername"
+        android:layout_toEndOf="@+id/imgColor"
+        android:text="Password : "
+        android:textColor="#343434"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/txtPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#343434"
+        android:textSize="18dp"
+        android:text="Password"
+        android:layout_below="@+id/txtUsername"
+        android:layout_toEndOf="@+id/lblUsername" />
+
+    <TextView
+        android:id="@+id/lblUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#343434"
+        android:textSize="15dp"
+        android:text="Username : "
+        android:layout_below="@+id/lAccount"
+        android:layout_alignBaseline="@+id/txtUsername"
+        android:layout_alignBottom="@+id/txtUsername"
+        android:layout_toEndOf="@+id/imgColor"/>
+
+    <TextView
+        android:id="@+id/txtUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#343434"
+        android:textSize="18dip"
+        android:text="Username"
+        android:layout_below="@+id/lAccount"
+        android:layout_toEndOf="@+id/lblUsername" />
+
+    <TextView
+        android:id="@+id/lAccount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Account"
+        android:textColor="#5F5F5F"
+        android:typeface="sans"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:shadowColor="#dbdbdb"
+        android:shadowDx="-1"
+        android:shadowDy="-1"
+        android:shadowRadius="1"
+        android:layout_toEndOf="@+id/imgColor"
+        android:layout_alignStart="@+id/lblUsername" />
+
+    <LinearLayout
+        android:id="@+id/imgColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="5dp"
+		android:gravity="center">
+
+        <TextView
+            android:id="@+id/imgText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+			android:background="@drawable/circle"
+            android:text="A"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp"
+            android:textStyle="normal"
+            android:textAllCaps="true"
+            android:typeface="sans"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/form_quare"
+	android:padding="5dp" >
+ 
+    <TextView
+        android:id="@+id/lblMasterKey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="@string/strMasterPwd"
+        android:layout_alignParentStart="true"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+ 
+    <EditText
+        android:id="@+id/eTxtMasterKey"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/lblMasterKey"
+        android:digits="abcdefghijklmnopqrstuvwxyz1234567890"
+        android:inputType="textPassword" >
+ 		
+        <requestFocus />
+ 
+    </EditText>
+
+	<Button
+        android:id="@+id/dialogButtonOK"
+        android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_margin="5dp"
+         android:layout_centerInParent="true"
+        android:layout_below="@+id/eTxtMasterKey"
+        android:background="@color/btncolor"
+        android:textStyle="bold"
+        android:text="@string/strOK"
+        />
+
+ 	<TextView
+ 	    android:id="@+id/lblForgotKey"
+ 	    android:layout_width="wrap_content"
+ 	    android:layout_height="wrap_content"
+ 	    android:layout_below="@+id/dialogButtonOK"
+ 	    android:layout_centerHorizontal="true"
+ 	    android:layout_margin="10dp"
+ 	    android:text="@string/lblForgotKey"
+ 	    android:textColor="@color/linkcolor"
+ 	    android:textStyle="bold|italic"
+ 	    android:shadowColor="#dbdbdb"
+        android:shadowDx="-2"
+        android:shadowDy="-2"
+        android:shadowRadius="1"
+ 	    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+</RelativeLayout>

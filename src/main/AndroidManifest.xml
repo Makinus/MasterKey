@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.makinus.masterkey"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="21"
+        android:targetSdkVersion="23" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+	
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        
+        <activity
+            android:name="com.makinus.masterkey.MainActivity"
+            android:label="@string/app_name" 
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+
+        </activity>
+        <activity android:name="com.makinus.masterkey.FormActivity" android:label="@string/app_name" android:screenOrientation="portrait" />
+        <activity android:name="com.makinus.masterkey.EditCardActivity" android:label="@string/app_name" android:screenOrientation="portrait" />
+        <activity android:name="com.makinus.masterkey.ViewCardActivity" android:label="@string/app_name" android:screenOrientation="portrait" />
+        <activity android:name="com.makinus.masterkey.ChangeMasterPwdActivity" android:label="@string/app_name" android:screenOrientation="portrait" />
+        <activity android:name="com.makinus.masterkey.ResetMasterPwdActivity" android:label="@string/app_name" android:screenOrientation="portrait" />
+        <activity android:name="com.makinus.masterkey.GenerateResetCodeActivity" android:label="@string/app_name" android:screenOrientation="portrait" />
+        <activity android:name="com.makinus.masterkey.MenuHandlerActivity" android:label="@string/app_name" android:screenOrientation="portrait" />
+        <!--<activity
+            android:name="com.makinus.masterkey.SearchActivity"
+            android:label="Search"
+            android:parentActivityName="com.makinus.masterkey.MainActivity" >
+
+            &lt;!&ndash; Parent activity meta-data to support 4.0 and lower &ndash;&gt;
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.makinus.masterkey.MainActivity" />
+        </activity>-->
+        
+	<service android:name=".service.NotifyService" android:exported="false"></service>
+	<receiver android:name=".service.MyScheduleReceiver" >
+        <intent-filter>
+            <action android:name="android.intent.action.BOOT_COMPLETED" />
+        </intent-filter>
+    </receiver>
+    <receiver android:name=".service.MyStartServiceReceiver" ></receiver>
+    </application>
+    
+    
+
+</manifest>
